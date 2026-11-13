@@ -26,7 +26,14 @@ Komutlar büyük/küçük harf duyarsızdır (`fall-through` `switch-case`). Tan
 | **Q** | Çıkış | Simülasyonu sonlandırır ve sonuç puan raporunu gösterir. |
 
 ## Kurulum ve Çalıştırma
-```bash
-gcc mars_kolonisi.c -o mars_kolonisi
-./mars_kolonisi
+Derlemek ve çalıştırmak için:
 
+    gcc mars_kolonisi.c -o mars_kolonisi
+    ./mars_kolonisi
+
+Windows Dev-C++ üzerinde `mars_kolonisi.c` dosyasını açıp **F11** tuşu ile doğrudan derleyip çalıştırabilirsiniz.
+
+## Puanlama Formülü
+Oyun sonunda (kazanma, kaybetme veya çıkış) ekrana aşağıdaki formülle hesaplanan toplam puan yazdırılır:
+
+    Puan = (gun * 100) + saglik + oksijen - modulHasari
